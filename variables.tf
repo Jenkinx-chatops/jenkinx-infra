@@ -4,6 +4,7 @@
 variable "region" {
   description = "AWS region code for creating resources."
   type = string
+  default = us-east-1
 }
 
 variable "cluster_version" {
@@ -21,7 +22,7 @@ variable "vault_user" {
 variable "cluster_name" {
   description = "Name of the Kubernetes cluster to create"
   type        = string
-  default     = ""
+  default     = "jenkinx"
 }
 
 variable "force_destroy" {
